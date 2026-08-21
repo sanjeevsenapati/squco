@@ -8,10 +8,10 @@
 // 1. CONFIGURATION (Single Source of Truth)
 // ==========================================================================
 const CONFIG = {
-  // Business WhatsApp number: 7788778800
-  whatsappNumber: "917788778800",
-  displayPhone: "7788778800",
-  formattedPhone: "+91 7788778800",
+  // Business WhatsApp number: 9019921521
+  whatsappNumber: "919019921521",
+  displayPhone: "9019921521",
+  formattedPhone: "+91 9019921521",
   defaultMessage: "Hi SQUCO, I am interested in joining the hanky revival movement! Please share collection and ordering details."
 };
 

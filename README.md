@@ -4,7 +4,7 @@
 > Bringing back the timeless habit of carrying a handkerchief into modern everyday life.
 
 [![SQUCO Movement](https://img.shields.io/badge/%23BringBackTheHanky-Movement-059669?style=for-the-badge)](https://squco.in)
-[![WhatsApp Ordering](https://img.shields.io/badge/WhatsApp-7788778800-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/917788778800)
+[![WhatsApp Ordering](https://img.shields.io/badge/WhatsApp-9019921521-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/919019921521)
 
 ---
 
@@ -88,10 +88,10 @@ Once, carrying a handkerchief was simply part of everyday life. Somewhere along 
 
 ---
 
-## 💬 Direct WhatsApp Commerce (`7788778800`)
+## 💬 Direct WhatsApp Commerce (`9019921521`)
 
 - Zero checkout friction, no passwords, no shopping cart abandonment.
-- Every collection card links directly via WhatsApp deep links (`wa.me/917788778800`) with pre-filled customization requests.
+- Every collection card links directly via WhatsApp deep links (`wa.me/919019921521`) with pre-filled customization requests.
 
 ---
 
