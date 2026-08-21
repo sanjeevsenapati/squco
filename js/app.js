@@ -751,24 +751,45 @@ function initHeaderScroll() {
   });
 }
 
-// Mobile Hamburger Toggle
+// Mobile Hamburger & Drawer Toggle
 function initMobileNav() {
   const toggleBtn = document.getElementById("mobile-toggle-btn");
+  const closeBtn = document.getElementById("mobile-drawer-close-btn");
   const navMenu = document.getElementById("nav-menu");
   const navLinks = document.querySelectorAll(".nav-link, .dropdown-item");
 
+  const openDrawer = () => {
+    if (!navMenu) return;
+    navMenu.classList.add("active");
+    if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeDrawer = () => {
+    if (!navMenu) return;
+    navMenu.classList.remove("active");
+    if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  };
+
   if (toggleBtn && navMenu) {
     toggleBtn.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
       const isActive = navMenu.classList.contains("active");
-      toggleBtn.setAttribute("aria-expanded", isActive);
+      if (isActive) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
     });
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeDrawer);
+    }
 
     // Close menu when clicking link
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-        toggleBtn.setAttribute("aria-expanded", false);
+        closeDrawer();
       });
     });
   }
