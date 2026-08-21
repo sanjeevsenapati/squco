@@ -2367,6 +2367,13 @@ body {
 @media (max-width: 1024px) {
   .hero-grid, .story-grid, .dimension-grid {
     grid-template-columns: 1fr;
+/* ==========================================================================
+   14. COMPREHENSIVE RESPONSIVE DESIGN (Mobile, Tablet, Desktop)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
     text-align: center;
     gap: 3rem;
   }
@@ -2384,6 +2391,11 @@ body {
     justify-content: center;
   }
 
+  .hero-pillars-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .workflow-grid {
     gap: 1.5rem;
   }
@@ -2398,6 +2410,11 @@ body {
     gap: 1.5rem;
   }
 
+  .moments-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
@@ -2405,33 +2422,64 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* Global Container & Typography */
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.85rem, 6.5vw, 2.5rem);
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Top Phone Announcement Bar */
   .top-phone-bar {
-    font-size: 0.8rem;
+    font-size: 0.775rem;
+    padding: 0.35rem 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    line-height: 1.3;
+  }
+
+  .top-phone-bar span:first-child {
+    display: none;
   }
 
   .header {
-    top: 36px;
+    top: 32px;
   }
 
-  .header-actions .btn-whatsapp, .header-phone-link {
+  .header-actions .btn-whatsapp, 
+  .header-phone-link {
     display: none;
   }
 
   .mobile-toggle {
-    display: block;
+    display: flex;
   }
 
+  /* Mobile Navigation Menu */
   .nav-menu {
     position: fixed;
-    top: calc(var(--header-height) + 36px);
+    top: calc(var(--header-height) + 32px);
     left: 0;
     width: 100%;
+    max-height: calc(100vh - var(--header-height) - 32px);
+    overflow-y: auto;
     background: rgba(253, 251, 247, 0.98);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     flex-direction: column;
-    padding: 2rem 1.5rem;
-    gap: 1.5rem;
+    padding: 1.75rem 1.5rem;
+    gap: 1.25rem;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -2470,34 +2518,200 @@ body {
     padding: 0.35rem 0;
   }
 
-  /* Responsive Hero Pillars Grid */
+  /* Hero Section */
+  .hero-section {
+    padding-top: calc(var(--header-height) + 48px);
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-grid {
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    font-size: clamp(2.1rem, 8vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-tagline-lead {
+    font-size: 1.1rem;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.975rem;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+  }
+
   .hero-pillars-grid {
     grid-template-columns: 1fr;
+    gap: 0.65rem;
+    width: 100%;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-pillar-item {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
     gap: 0.75rem;
   }
 
-  /* Responsive Core Values Grid */
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-visual-showcase {
+    width: 100%;
+  }
+
+  .hero-gallery-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .hero-thumb-card img {
+    height: 100px;
+  }
+
+  .floating-glass-card {
+    position: static;
+    margin-top: 0.85rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Filter Tabs (Touch-Friendly Horizontal Scroll) */
+  .filter-tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.5rem;
+    padding: 0.25rem 0.25rem 0.75rem 0.25rem;
+    margin-bottom: 2rem;
+    justify-content: flex-start;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-tab {
+    flex-shrink: 0;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Collection Subsections */
+  .collection-subsection {
+    margin-bottom: 3.5rem;
+  }
+
+  .subsection-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subsection-value-badge {
+    align-items: flex-start;
+    width: 100%;
+    padding: 0.6rem 1rem;
+  }
+
+  .subsection-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-img-wrapper {
+    padding-top: 75%;
+  }
+
+  .product-card-body {
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+  }
+
+  .product-card-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .product-card-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Core Values Grid */
   .core-values-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
-  /* Responsive Persona Grid */
+  .core-value-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Persona Matrix */
   .persona-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
-  /* Responsive Moments Grid */
+  .persona-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Moments Grid */
   .moments-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .moments-quote-banner {
+    padding: 1.5rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .moments-quote-text {
+    font-size: 1.15rem;
+  }
+
+  .moment-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .empathy-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  /* Workflow & Movement */
+  .workflow-grid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
-  /* Responsive How It Works */
-  .workflow-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .workflow-card {
+    padding: 1.5rem 1.25rem;
   }
 
   .workflow-card-connector {
@@ -2507,8 +2721,8 @@ body {
   .workflow-action-box {
     flex-direction: column;
     text-align: center;
-    padding: 1.75rem 1.5rem;
-    gap: 1.5rem;
+    padding: 1.5rem 1.25rem;
+    gap: 1.25rem;
   }
 
   .wf-action-left {
@@ -2516,30 +2730,72 @@ body {
     text-align: center;
   }
 
+  .movement-banner {
+    padding: 2.5rem 1.25rem;
+    margin: 3rem auto;
+  }
+
+  .movement-hashtag {
+    font-size: clamp(1.8rem, 6.5vw, 2.5rem);
+  }
+
+  /* Product Modal (Mobile Sheet) */
+  .modal-overlay {
+    padding: 0.5rem;
+    align-items: flex-end;
+  }
+
+  .modal-card {
+    max-height: 88vh;
+    border-radius: 1.5rem 1.5rem 0 0;
+    transform: translateY(20px);
+  }
+
+  .modal-overlay.active .modal-card {
+    transform: translateY(0);
+  }
+
   .modal-grid {
     grid-template-columns: 1fr;
   }
 
   .modal-image-wrapper {
-    max-height: 250px;
+    padding: 1rem;
+    max-height: 220px;
   }
 
-  .mobile-bottom-bar {
-    display: block;
+  .modal-details {
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
   }
 
-  body {
-    padding-bottom: 70px;
-  }
-}
-
-@media (max-width: 480px) {
-  .products-grid {
-    grid-template-columns: 1fr;
+  .modal-title {
+    font-size: 1.4rem;
   }
 
-  .workflow-card {
-    padding: 1.75rem 1.25rem;
+  .modal-footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .modal-footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal-close-btn {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Footer & Mobile Bottom Bar */
+  .footer {
+    padding: 3rem 0 calc(5.5rem + env(safe-area-inset-bottom)) 0;
+    margin-top: 3rem;
   }
 
   .footer-grid {
@@ -2551,6 +2807,35 @@ body {
     flex-direction: column;
     gap: 0.75rem;
     text-align: center;
+  }
+
+  .mobile-bottom-bar {
+    display: block;
+    padding: 0.65rem 1rem max(0.65rem, env(safe-area-inset-bottom)) 1rem;
+  }
+
+  body {
+    padding-bottom: calc(75px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .brand-logo .brand-name {
+    font-size: 1.35rem;
+  }
+
+  .brand-logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.9rem;
   }
 
   .story-list {
