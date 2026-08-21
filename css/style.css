@@ -949,12 +949,6 @@ body {
 .core-val-carry .core-val-footer {
   color: #991B1B;
 }
-  padding: 0.4rem 1rem;
-  border-radius: var(--radius-full);
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  font-weight: 500;
-}
 
 /* --------------------------------------------------------------------------
    9. Product Showcase ("Choose Your SQUCO")
@@ -2361,14 +2355,8 @@ body {
   font-size: 1.05rem;
 }
 
-/* --------------------------------------------------------------------------
-   15. Responsive Breakpoints
-   -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
-  .hero-grid, .story-grid, .dimension-grid {
-    grid-template-columns: 1fr;
 /* ==========================================================================
-   14. COMPREHENSIVE RESPONSIVE DESIGN (Mobile, Tablet, Desktop)
+   15. COMPREHENSIVE RESPONSIVE DESIGN (Mobile, Tablet, Desktop)
    ========================================================================== */
 
 @media (max-width: 1024px) {
@@ -2394,6 +2382,11 @@ body {
   .hero-pillars-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .workflow-grid {
@@ -2437,7 +2430,7 @@ body {
   }
 
   .section-header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.25rem;
   }
 
   /* Top Phone Announcement Bar */
