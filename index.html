@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=35" />
+  <link rel="stylesheet" href="css/style.css?v=100" />
 </head>
 <body>
 
@@ -45,7 +45,7 @@
   <header class="header" id="main-header">
     <div class="container header-container">
       <a href="#home" class="brand-logo" aria-label="SQUCO Home">
-        <img src="assets/logo/logo.jpg" alt="SQUCO Logo" />
+        <img src="assets/logo/logo.jpg?v=5" alt="SQUCO Logo" />
         <span class="brand-name">SQU<span>CO</span></span>
       </a>
 
@@ -53,7 +53,17 @@
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#home" class="nav-link active">Home</a></li>
           <li><a href="#story" class="nav-link">The Story</a></li>
-          <li><a href="#products" class="nav-link">Collections</a></li>
+          <li class="nav-item-dropdown">
+            <a href="#products" class="nav-link dropdown-toggle" id="collections-dropdown-toggle">
+              Collections <span class="dropdown-chevron">▾</span>
+            </a>
+            <ul class="dropdown-menu" id="collections-dropdown">
+              <li><a href="#products" class="dropdown-item" onclick="filterAndScroll('everyday')"><span class="drop-icon">🌿</span> Everyday Collection</a></li>
+              <li><a href="#products" class="dropdown-item" onclick="filterAndScroll('festival')"><span class="drop-icon">🎉</span> Festival & Occasion</a></li>
+              <li><a href="#products" class="dropdown-item" onclick="filterAndScroll('corporate')"><span class="drop-icon">💼</span> Corporate Gifting</a></li>
+              <li><a href="#products" class="dropdown-item" onclick="filterAndScroll('kids')"><span class="drop-icon">🧸</span> Kids & Little Pockets</a></li>
+            </ul>
+          </li>
           <li><a href="#who-for" class="nav-link">Who Is It For?</a></li>
           <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
@@ -74,51 +84,79 @@
   </header>
 
   <!-- ==========================================================================
-       1. HERO SECTION
+       1. HERO SECTION (HEART-TOUCHING & VISUALLY STUNNING)
        ========================================================================== -->
   <section class="hero-section" id="home">
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge">
           <span class="pulse-dot"></span>
-          <span>The Handkerchief Revival</span>
+          <span>🌿 The Handkerchief Revival</span>
         </div>
         <h1 class="hero-title">
           Bring Back <br />
           <span class="gradient-text">the Hanky.</span>
         </h1>
+        <p class="hero-tagline-lead">
+          A small square of cotton. A lifetime of quiet care and memories.
+        </p>
         <p class="hero-subtitle">
-          Once, carrying a handkerchief was simply part of everyday life. Somewhere along the way, we forgot it. SQUCO is here to bring that small, essential habit back.
+          Remember when someone you loved reached into their pocket, and handed you a clean, freshly pressed handkerchief? It wasn’t just cloth — it was comfort, manners, and quiet care you could feel. SQUCO brings that timeless grace back into modern everyday life.
         </p>
 
-        <!-- PROMINENT WHATSAPP NUMBER DISPLAY -->
-        <div class="hero-contact-card">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <!-- Emotional Habit Pillars -->
+        <div class="hero-pillars-grid">
+          <div class="hero-pillar-item">
+            <span class="pillar-icon">🌱</span>
+            <div class="pillar-info">
+              <strong>Pure Comfort</strong>
+              <span>100% Organic Cotton</span>
+            </div>
           </div>
-          <div class="contact-details">
-            <span class="contact-label">Order Directly On WhatsApp</span>
-            <span class="contact-number">7788778800</span>
+          <div class="hero-pillar-item">
+            <span class="pillar-icon">🤝</span>
+            <div class="pillar-info">
+              <strong>Everyday Manners</strong>
+              <span>Poise & Preparedness</span>
+            </div>
+          </div>
+          <div class="hero-pillar-item">
+            <span class="pillar-icon">🕊️</span>
+            <div class="pillar-info">
+              <strong>Mindful Living</strong>
+              <span>End Disposable Waste</span>
+            </div>
           </div>
         </div>
 
         <div class="hero-cta-group">
-          <a href="#story" class="btn btn-primary">Discover SQUCO</a>
-          <button type="button" class="btn btn-whatsapp" onclick="orderOnWhatsApp()">
-            Order on WhatsApp
-          </button>
+          <a href="#products" class="btn btn-primary">Discover the Collections →</a>
+          <a href="#story" class="btn btn-secondary">Read Our Story</a>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="hero-image-wrapper">
-          <img src="assets/hero/hero-hanky-packet.jpg" alt="SQUCO 2x2x2 inches Packet with Zigzag Fold" />
+      <!-- Enhanced Hero Visual Showcase with Lifestyle Gallery -->
+      <div class="hero-visual-showcase">
+        <div class="hero-main-card">
+          <img src="assets/hero/hero-hanky-packet.jpg" alt="SQUCO Handkerchief Revival and Pocket Cube" class="hero-main-img" />
           <div class="floating-glass-card">
-            <div class="floating-icon">📦</div>
+            <div class="floating-icon">🌿</div>
             <div class="floating-info">
-              <strong>2 × 2 × 2 Inches Zigzag Packet</strong>
-              <span>Small in Pocket. Big in Habit.</span>
+              <strong>The Handkerchief Revival</strong>
+              <span>"You don’t need it every minute. You need it when it matters most."</span>
             </div>
+          </div>
+        </div>
+
+        <!-- Lifestyle Companion Visuals -->
+        <div class="hero-gallery-row">
+          <div class="hero-thumb-card">
+            <img src="assets/hero/hero-flatlay.jpg" alt="Everyday carry essentials with SQUCO handkerchief" />
+            <span class="thumb-label">Everyday Carry</span>
+          </div>
+          <div class="hero-thumb-card">
+            <img src="assets/hero/hero-carry.jpg" alt="Mindful organic cotton handkerchief in hand" />
+            <span class="thumb-label">Mindful Living</span>
           </div>
         </div>
       </div>
@@ -179,36 +217,69 @@
   </section>
 
   <!-- ==========================================================================
-       5. THE 2 × 2 × 2 INCHES IDEA & SMART PACKAGING FORMS
+       5. THE SQUCO MOVEMENT & CORE VALUES
        ========================================================================== -->
-  <section class="section dimension-section" id="concept-packaging">
-    <div class="container dimension-grid">
-      <div class="dimension-card">
-        <div class="dimension-badge">2×2×2</div>
-        <div class="dimension-sub">Inches • Zigzag Fold</div>
-        <p style="color: var(--text-muted); margin-bottom: 1rem;">
-          That's all the space it needs. Engineered with an innovative zigzag accordion fold to slide effortlessly into any pocket, car, or bag.
+  <section class="section movement-core-section" id="movement-core">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — SQUCO Momentum & Core Values</span>
+        <h2 class="section-title">A Simple Habit. <br /><span class="gradient-text">A Powerful Movement.</span></h2>
+        <p class="section-subtitle">
+          SQUCO isn't about buying another product. We are building a movement to bring back mindfulness, manners, and everyday utility.
         </p>
-
-        <div class="use-cases-pills">
-          <span class="pill">2×2×2" Zigzag Pocket Cube</span>
-          <span class="pill">1×1×3" Slim Stick Single</span>
-          <span class="pill">3×3×1" Kids Flat Pocket Pack</span>
-        </div>
       </div>
 
-      <div>
-        <span class="section-tag">03 — Ultra Compact Packaging</span>
-        <h2 class="section-title">Small Packet. <br /><span class="gradient-text">Big Everyday Habit.</span></h2>
-        <p class="section-subtitle">
-          A handkerchief small enough to forget in your pocket, but useful enough to remember every single day.
-        </p>
-
-        <div style="margin-top: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); padding: 2rem; border-radius: var(--radius-md);">
-          <img src="assets/packaging/packet-2x2x2.jpg" alt="SQUCO 2x2x2 inches Packet held in fingers" style="width: 100%; border-radius: var(--radius-sm); margin-bottom: 1rem;" />
-          <p style="color: var(--text-main); font-weight: 600; text-align: center;">
-            Tiny 2×2×2 inches packet → Useful everyday habit
+      <div class="core-values-grid">
+        <!-- Pillar 1 -->
+        <div class="core-value-card core-val-mindful">
+          <div class="core-val-icon">🌱</div>
+          <span class="core-val-tag">Core Value 01</span>
+          <h3 class="core-val-title">Zero-Waste Mindfulness</h3>
+          <p class="core-val-desc">
+            Break free from single-use disposable culture. One soft, reusable organic cotton handkerchief replaces hundreds of crumpled paper tissues over its lifespan.
           </p>
+          <div class="core-val-footer">
+            <span>✓ Thoughtful consumption over waste</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="core-value-card core-val-manners">
+          <div class="core-val-icon">🤝</div>
+          <span class="core-val-tag">Core Value 02</span>
+          <h3 class="core-val-title">Manners, Poise & Chivalry</h3>
+          <p class="core-val-desc">
+            Preparedness for life's quiet moments. A freshly laundered handkerchief offers composure in executive boardrooms and genuine human warmth when offered to someone in need.
+          </p>
+          <div class="core-val-footer">
+            <span>✓ The timeless gentlemanly gesture</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="core-value-card core-val-habits">
+          <div class="core-val-icon">👶</div>
+          <span class="core-val-tag">Core Value 03</span>
+          <h3 class="core-val-title">Lifelong Healthy Habits</h3>
+          <p class="core-val-desc">
+            Before children grow up with only smartphones in their hands, we teach them the dignity of personal hygiene, self-reliance, and caring for their own little pocket essential.
+          </p>
+          <div class="core-val-footer">
+            <span>✓ Habits that last a lifetime</span>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="core-value-card core-val-carry">
+          <div class="core-val-icon">📦</div>
+          <span class="core-val-tag">Core Value 04</span>
+          <h3 class="core-val-title">Effortless Everyday Carry</h3>
+          <p class="core-val-desc">
+            Old habit, modern attitude. Thoughtfully folded into ultra-compact, travel-ready pocket formats that fit naturally and invisibly into modern lifestyles, bags, and pockets.
+          </p>
+          <div class="core-val-footer">
+            <span>✓ Small in pocket, big in life</span>
+          </div>
         </div>
       </div>
     </div>
@@ -228,117 +299,281 @@
       </div>
 
       <div class="filter-bar">
-        <button type="button" class="filter-btn active" data-filter="all">All Collections</button>
-        <button type="button" class="filter-btn" data-filter="daily">🏠 SQUCO Daily</button>
-        <button type="button" class="filter-btn" data-filter="handwoven">🧵 Handwoven Artisan</button>
-        <button type="button" class="filter-btn" data-filter="kids">👶 SQUCO Kids</button>
-        <button type="button" class="filter-btn" data-filter="grownups">🧑 SQUCO Grownups</button>
-        <button type="button" class="filter-btn" data-filter="occasion">🎁 SQUCO Occasion</button>
-        <button type="button" class="filter-btn" data-filter="corporate">💼 SQUCO Corporate</button>
-        <button type="button" class="filter-btn" data-filter="couple">💕 First Night & Marriage (Blood Red)</button>
+        <button type="button" class="filter-btn active" data-filter="all">🌟 All Collections</button>
+        <button type="button" class="filter-btn" data-filter="everyday">🌿 Everyday</button>
+        <button type="button" class="filter-btn" data-filter="festival">🎉 Festival & Occasions</button>
+        <button type="button" class="filter-btn" data-filter="corporate">💼 Corporate</button>
+        <button type="button" class="filter-btn" data-filter="kids">🧸 Kids & Little Pockets</button>
       </div>
 
-      <div class="products-grid" id="products-container">
-        <!-- Rendered dynamically by app.js -->
+      <div id="products-container">
+        <!-- Rendered dynamically by app.js with Themed Sub-sections -->
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       7. WHO IS IT FOR?
+       7. WHO IS IT FOR? (CATCHY & PURPOSE-DRIVEN PERSONA MATRIX)
        ========================================================================== -->
-  <section class="section" id="who-for">
+  <section class="section who-for-section" id="who-for">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">05 — Target Audience</span>
+        <span class="section-tag">05 — Pocket Personas</span>
         <h2 class="section-title">Who Should Carry <span class="gradient-text">a SQUCO?</span></h2>
         <p class="section-subtitle">
-          Because a simple handkerchief belongs in every pocket, school bag, and desk drawer.
+          From early school years to boardroom leadership — because a clean, soft handkerchief belongs in every pocket, bag, and desk drawer.
         </p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem;">
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.75rem; border-radius: var(--radius-md); text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">👶</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 0.35rem;">Kids</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">"Start the habit early."</p>
+      <!-- 6 Catchy Persona Cards Grid -->
+      <div class="persona-grid">
+        <!-- Persona 1 -->
+        <div class="persona-card persona-kids">
+          <div class="persona-card-header">
+            <div class="persona-icon-box">🧸</div>
+            <div class="persona-header-meta">
+              <span class="persona-tag">Early Childhood</span>
+              <h3 class="persona-title">Kids & Students</h3>
+            </div>
+          </div>
+          <p class="persona-desc">
+            Tucked neatly into uniform and backpack pockets for lunch spills, messy art classes, and playground sweat.
+          </p>
+          <div class="persona-benefit">
+            <span class="benefit-badge">✨ Core Value</span>
+            <p class="benefit-text">Teaches self-reliance, personal hygiene, and lifelong manners early.</p>
+          </div>
+          <div class="persona-fit">
+            <span class="fit-label">Ideal Pick:</span>
+            <span class="fit-val">Kids Soft Animal & Fruit Prints (3×3×1")</span>
+          </div>
         </div>
 
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.75rem; border-radius: var(--radius-md); text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🎒</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 0.35rem;">Students</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">"Something useful in every backpack."</p>
+        <!-- Persona 2 -->
+        <div class="persona-card persona-exec">
+          <div class="persona-card-header">
+            <div class="persona-icon-box">💼</div>
+            <div class="persona-header-meta">
+              <span class="persona-tag">Business & Suits</span>
+              <h3 class="persona-title">Professionals & Leaders</h3>
+            </div>
+          </div>
+          <p class="persona-desc">
+            Sleek blazer and jacket carry for keynote presentations, boardroom composure, and crisp handshake confidence.
+          </p>
+          <div class="persona-benefit">
+            <span class="benefit-badge">✨ Core Value</span>
+            <p class="benefit-text">Understated gentlemanly elegance and composure under pressure.</p>
+          </div>
+          <div class="persona-fit">
+            <span class="fit-label">Ideal Pick:</span>
+            <span class="fit-val">Grown-ups Pure Linen-Cotton (1×1×3" Slim)</span>
+          </div>
         </div>
 
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.75rem; border-radius: var(--radius-md); text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">💼</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 0.35rem;">Professionals</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">"Keep one ready for everyday life."</p>
+        <!-- Persona 3 -->
+        <div class="persona-card persona-parents">
+          <div class="persona-card-header">
+            <div class="persona-icon-box">🏡</div>
+            <div class="persona-header-meta">
+              <span class="persona-tag">Home & Care</span>
+              <h3 class="persona-title">Parents & Caregivers</h3>
+            </div>
+          </div>
+          <p class="persona-desc">
+            Always prepared for scraped knees, sticky ice cream fingers, sudden raindrops, and quiet comfort for loved ones.
+          </p>
+          <div class="persona-benefit">
+            <span class="benefit-badge">✨ Core Value</span>
+            <p class="benefit-text">A soft, tangible gesture of pure organic cotton care wherever you go.</p>
+          </div>
+          <div class="persona-fit">
+            <span class="fit-label">Ideal Pick:</span>
+            <span class="fit-val">Daily Pure Cotton Pocket Cube (2×2×2")</span>
+          </div>
         </div>
 
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.75rem; border-radius: var(--radius-md); text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🏡</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 0.35rem;">Parents</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">"Because little things matter."</p>
+        <!-- Persona 4 -->
+        <div class="persona-card persona-couples">
+          <div class="persona-card-header">
+            <div class="persona-icon-box">💍</div>
+            <div class="persona-header-meta">
+              <span class="persona-tag">Sacred Romance</span>
+              <h3 class="persona-title">Couples & Newlyweds</h3>
+            </div>
+          </div>
+          <p class="persona-desc">
+            Wedding vow tears of joy, first-night intimate keepsakes, and personalized his-and-her embroidered heirlooms.
+          </p>
+          <div class="persona-benefit">
+            <span class="benefit-badge">✨ Core Value</span>
+            <p class="benefit-text">Sacred memories woven into handcrafted heirloom threads.</p>
+          </div>
+          <div class="persona-fit">
+            <span class="fit-label">Ideal Pick:</span>
+            <span class="fit-val">Blood Red First Night Keepsake Box</span>
+          </div>
         </div>
 
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.75rem; border-radius: var(--radius-md); text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">💕</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 0.35rem;">Couples</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">"Carry the habit together."</p>
+        <!-- Persona 5 -->
+        <div class="persona-card persona-corp">
+          <div class="persona-card-header">
+            <div class="persona-icon-box">🏢</div>
+            <div class="persona-header-meta">
+              <span class="persona-tag">Corporate ESG</span>
+              <h3 class="persona-title">Modern Enterprises</h3>
+            </div>
+          </div>
+          <p class="persona-desc">
+            Replace disposable promotional plastic junk with sustainable, premium cotton gifts that clients and employees carry daily.
+          </p>
+          <div class="persona-benefit">
+            <span class="benefit-badge">✨ Core Value</span>
+            <p class="benefit-text">Showcases genuine brand sustainability with subtle logo embroidery.</p>
+          </div>
+          <div class="persona-fit">
+            <span class="fit-label">Ideal Pick:</span>
+            <span class="fit-val">Custom Monogrammed Executive Gift Box</span>
+          </div>
         </div>
 
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.75rem; border-radius: var(--radius-md); text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🏢</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 0.35rem;">Companies</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">"Give something people actually use."</p>
+        <!-- Persona 6 -->
+        <div class="persona-card persona-eco">
+          <div class="persona-card-header">
+            <div class="persona-icon-box">🌱</div>
+            <div class="persona-header-meta">
+              <span class="persona-tag">Sustainable Living</span>
+              <h3 class="persona-title">Zero-Waste Minimalists</h3>
+            </div>
+          </div>
+          <p class="persona-desc">
+            Eliminating hundreds of bleached, chemical-laden disposable tissues per year with one washable organic companion.
+          </p>
+          <div class="persona-benefit">
+            <span class="benefit-badge">✨ Core Value</span>
+            <p class="benefit-text">Small mindful choices creating immense environmental impact.</p>
+          </div>
+          <div class="persona-fit">
+            <span class="fit-label">Ideal Pick:</span>
+            <span class="fit-val">Handwoven Artisan Pit-Loom Cotton</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       8. A HANKY FOR EVERY MOMENT (OCCASIONS)
+       8. A HANKY FOR EVERY MOMENT (IMMERSIVE STORYTELLING JOURNEY)
        ========================================================================== -->
-  <section class="section" id="occasions">
+  <section class="section moments-section" id="occasions">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">06 — Life Journey</span>
+        <span class="section-tag">06 — Moments of Life</span>
         <h2 class="section-title">A Hanky for <span class="gradient-text">Every Moment</span></h2>
         <p class="section-subtitle">
-          You don't need it every minute. You just need it when you need it.
+          You don't need it every minute. But when you need it — nothing else in the world replaces a clean, soft handkerchief.
         </p>
       </div>
 
-      <div class="timeline-scroll">
-        <div class="moment-card">
-          <div class="moment-icon">🌅</div>
-          <h3 class="moment-title">Morning Commute</h3>
-          <p class="moment-desc">Fresh start to the day with a clean folded hanky in your pocket.</p>
+      <!-- Emotional Quote Accent Banner -->
+      <div class="moments-quote-banner">
+        <div class="quote-mark">“</div>
+        <p class="quote-text">
+          A tissue is thrown away in seconds. A handkerchief carries memories, manners, and mindfulness through life’s everyday moments.
+        </p>
+        <span class="quote-author">— The SQUCO Movement Philosophy</span>
+      </div>
+
+      <!-- 5 Immersive Moments Grid -->
+      <div class="moments-grid">
+        <!-- Moment 1 -->
+        <div class="moment-card moment-morning">
+          <div class="moment-card-header">
+            <span class="moment-time-badge">🌅 07:30 AM</span>
+            <span class="moment-pill">Morning Routine</span>
+          </div>
+          <div class="moment-card-body">
+            <h3 class="moment-title">The Morning Commute</h3>
+            <p class="moment-desc">
+              Slip the 2×2×2" SQUCO cube into your bag or jacket. Fresh, folded, and reassuring as you step out into the bustle of the day.
+            </p>
+            <div class="moment-takeaway">
+              <span class="takeaway-icon">✦</span>
+              <span class="takeaway-text">Instant comfort in your pocket</span>
+            </div>
+          </div>
         </div>
 
-        <div class="moment-card">
-          <div class="moment-icon">🏫</div>
-          <h3 class="moment-title">School & Play</h3>
-          <p class="moment-desc">Teaching children hygiene and simple responsibility early in life.</p>
+        <!-- Moment 2 -->
+        <div class="moment-card moment-school">
+          <div class="moment-card-header">
+            <span class="moment-time-badge">🎒 08:30 AM</span>
+            <span class="moment-pill">Childhood Habit</span>
+          </div>
+          <div class="moment-card-body">
+            <h3 class="moment-title">School & Playgrounds</h3>
+            <p class="moment-desc">
+              Tucked neatly into small uniform pockets. Wiping a spilled lunch, art class paint, or sweaty foreheads after sports practice.
+            </p>
+            <div class="moment-takeaway">
+              <span class="takeaway-icon">✦</span>
+              <span class="takeaway-text">Teaching hygiene & self-reliance</span>
+            </div>
+          </div>
         </div>
 
-        <div class="moment-card">
-          <div class="moment-icon">💼</div>
-          <h3 class="moment-title">Executive Meetings</h3>
-          <p class="moment-desc">Sophisticated linen fold for professional confidence and subtle style.</p>
+        <!-- Moment 3 -->
+        <div class="moment-card moment-boardroom">
+          <div class="moment-card-header">
+            <span class="moment-time-badge">💼 02:00 PM</span>
+            <span class="moment-pill">Executive Grace</span>
+          </div>
+          <div class="moment-card-body">
+            <h3 class="moment-title">The Boardroom & Suits</h3>
+            <p class="moment-desc">
+              Important client meetings and conferences. A crisp folded linen hanky adds confidence, composure, and timeless professionalism.
+            </p>
+            <div class="moment-takeaway">
+              <span class="takeaway-icon">✦</span>
+              <span class="takeaway-text">Poise, elegance & preparation</span>
+            </div>
+          </div>
         </div>
 
-        <div class="moment-card">
-          <div class="moment-icon">🍽️</div>
-          <h3 class="moment-title">Lunch & Dining</h3>
-          <p class="moment-desc">Quick, clean, and personal alternative to disposable paper napkins.</p>
+        <!-- Moment 4 -->
+        <div class="moment-card moment-evening">
+          <div class="moment-card-header">
+            <span class="moment-time-badge">🍽️ 08:00 PM</span>
+            <span class="moment-pill">Celebrations</span>
+          </div>
+          <div class="moment-card-body">
+            <h3 class="moment-title">Evening Dining & Weddings</h3>
+            <p class="moment-desc">
+              Romantic dinners, family festivals, and weddings. Say goodbye to crumpled paper napkins with silk-bordered woven dignity.
+            </p>
+            <div class="moment-takeaway">
+              <span class="takeaway-icon">✦</span>
+              <span class="takeaway-text">Soft, dignified & sustainable</span>
+            </div>
+          </div>
         </div>
 
-        <div class="moment-card">
-          <div class="moment-icon">✨</div>
-          <h3 class="moment-title">Unexpected Moments</h3>
-          <p class="moment-desc">Spills, tears of joy, or offering a clean hanky to someone in need.</p>
+        <!-- Moment 5 (Full Width / Highlight Feature) -->
+        <div class="moment-card moment-kindness moment-card-featured">
+          <div class="moment-card-header">
+            <span class="moment-time-badge">✨ Anytime</span>
+            <span class="moment-pill">The Golden Rule</span>
+          </div>
+          <div class="moment-card-body">
+            <h3 class="moment-title">Offering It to Someone Else</h3>
+            <p class="moment-desc">
+              Tears of joy at a wedding ceremony, a child with an ice cream spill, or a colleague in need. Handing over a clean, freshly laundered handkerchief is an act of genuine human warmth.
+            </p>
+            <div class="moment-takeaway">
+              <span class="takeaway-icon">✦</span>
+              <span class="takeaway-text">The ultimate gesture of chivalry & empathy</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -370,15 +605,15 @@
           <div style="font-size: 2.2rem; margin-bottom: 1rem;">💎</div>
           <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 0.5rem;">Crafted Quality</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem;">
-            Soft organic cotton and fine linen weaves engineered to stay pristine after dozens of washes.
+            Soft organic cotton and fine linen weaves engineered to stay pristine and get softer after dozens of washes.
           </p>
         </div>
 
         <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 2rem; border-radius: var(--radius-md);">
-          <div style="font-size: 2.2rem; margin-bottom: 1rem;">💬</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 0.5rem;">Instant WhatsApp Support</h3>
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">✨</div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 0.5rem;">Frictionless Experience</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem;">
-            Direct ordering & assistance at <strong>7788778800</strong>. No checkout friction or passwords.
+            Direct personal service with custom monogram embroidery, responsive support, and fast door delivery.
           </p>
         </div>
       </div>
@@ -392,9 +627,9 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">08 — Simple & Personal Workflow</span>
-        <h2 class="section-title">How Ordering <span class="gradient-text">Works</span></h2>
+        <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
         <p class="section-subtitle">
-          No complicated carts, passwords, or checkout forms. Getting your SQUCO handkerchief is fast, personal, and seamless.
+          No complicated carts, passwords, or checkout friction. Getting your SQUCO is fast, personal, and seamless.
         </p>
       </div>
 
@@ -412,39 +647,40 @@
           </div>
           <div class="workflow-card-body">
             <span class="step-micro-tag">Step One</span>
-            <h3 class="workflow-title">Choose Your SQUCO</h3>
+            <h3 class="workflow-title">Choose Your Collection</h3>
             <p class="workflow-desc">
-              Browse our curated collections and pick the form factor that fits your life — the signature <strong>2×2×2" Zigzag Cube</strong>, <strong>1×1×3" Slim Stick</strong>, or <strong>Blood Red First Night Box</strong>.
+              Select the SQUCO collection that fits your lifestyle — Everyday Cotton, Handwoven Artisan, Festive Keepsake, Corporate Gifting, or Kids Edition.
             </p>
             <div class="step-feature-pills">
-              <span class="wf-pill">Daily Cotton</span>
-              <span class="wf-pill">Kids School Pack</span>
-              <span class="wf-pill">Couple Keepsake</span>
+              <span class="wf-pill">Everyday</span>
+              <span class="wf-pill">Festival</span>
+              <span class="wf-pill">Corporate</span>
+              <span class="wf-pill">Kids</span>
             </div>
           </div>
           <div class="workflow-card-connector" aria-hidden="true">→</div>
         </div>
 
         <!-- Step 2 -->
-        <div class="workflow-card workflow-card-highlight">
+        <div class="workflow-card">
           <div class="workflow-card-top">
-            <div class="step-badge step-badge-whatsapp">
+            <div class="step-badge">
               <span class="step-count">02</span>
             </div>
-            <div class="step-icon-wrap step-icon-whatsapp">
-              <svg width="24" height="24" viewBox="0 0 24 24" style="width:24px;height:24px;max-width:24px;max-height:24px;fill:#25D366;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <div class="step-icon-wrap">
+              <span class="step-emoji">💬</span>
             </div>
           </div>
           <div class="workflow-card-body">
-            <span class="step-micro-tag" style="color: #25D366;">Step Two</span>
-            <h3 class="workflow-title">Tap to WhatsApp</h3>
+            <span class="step-micro-tag">Step Two</span>
+            <h3 class="workflow-title">Personal Direct Connect</h3>
             <p class="workflow-desc">
-              Click <strong>Explore Collection →</strong> on any card or message <strong>7788778800</strong>. Your message is pre-filled automatically with your chosen collection.
+              Click <strong>Explore Collection →</strong> on your chosen piece. Connect directly with our team to customize names, gift packaging, or corporate branding.
             </p>
-            <div class="whatsapp-chat-preview">
-              <div class="chat-bubble-mini">
-                <span>💬 "Hi SQUCO, I would like to order..."</span>
-              </div>
+            <div class="step-feature-pills">
+              <span class="wf-pill">Custom Monogram</span>
+              <span class="wf-pill">Gift Notes</span>
+              <span class="wf-pill">Bulk ESG Orders</span>
             </div>
           </div>
           <div class="workflow-card-connector" aria-hidden="true">→</div>
@@ -464,51 +700,35 @@
             <span class="step-micro-tag">Step Three</span>
             <h3 class="workflow-title">Delivered to Your Door</h3>
             <p class="workflow-desc">
-              Our team immediately confirms your order, customizes any monogram embroidery or gift notes, and dispatches your SQUCO in protective luxury packaging.
+              Our team confirms and dispatches your SQUCO in protective packaging alongside our complimentary Habit Care Guide.
             </p>
             <div class="step-feature-pills">
-              <span class="wf-pill">Custom Monogram</span>
               <span class="wf-pill">Fast Dispatch</span>
+              <span class="wf-pill">Gift Packaging</span>
               <span class="wf-pill">Habit Guide</span>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Quick Action Callout Box -->
-      <div class="workflow-action-box">
-        <div class="wf-action-left">
-          <div class="wf-action-icon">🚀</div>
-          <div>
-            <h4>Ready to restart the habit?</h4>
-            <p>Direct assistance and custom orders on WhatsApp: <strong>+91 7788778800</strong></p>
-          </div>
-        </div>
-        <button type="button" class="btn btn-whatsapp" onclick="orderOnWhatsApp()">
-          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          Message 7788778800
-        </button>
-      </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       11. JOIN THE MOVEMENT & SOCIAL (#BringBackTheHanky)
+       11. JOIN THE MOVEMENT (#BringBackTheHanky)
        ========================================================================== -->
   <div class="container">
     <div class="movement-banner">
-      <span class="section-tag">09 — Join The Movement</span>
-      <h2 class="movement-hashtag">#BringBackTheHanky</h2>
-      <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 600px; margin: 0 auto;">
-        SQUCO isn't asking you to buy another thing. We're asking you to restart a habit.
-      </p>
-      
-      <div class="movement-phone">
-        💬 Order via WhatsApp: 7788778800
+      <div class="movement-logo-wrap">
+        <img src="assets/logo/logo.jpg?v=5" alt="SQUCO Logo" class="movement-logo-img" />
       </div>
+      <span class="section-tag">09 — The Mindful Movement</span>
+      <h2 class="movement-hashtag">#BringBackTheHanky</h2>
+      <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 640px; margin: 0 auto 2rem auto; line-height: 1.6;">
+        SQUCO isn't asking you to buy another thing. We're inviting you to restart a timeless everyday habit of care, poise, and mindfulness.
+      </p>
 
-      <button type="button" class="btn btn-whatsapp" onclick="orderOnWhatsApp()">
-        Start Your Order on WhatsApp
+      <button type="button" class="btn btn-primary" onclick="orderOnWhatsApp()">
+        Join the Movement & Order →
       </button>
     </div>
   </div>
@@ -588,7 +808,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#home" class="brand-logo">
-            <img src="assets/logo/logo.jpg" alt="SQUCO Logo" />
+            <img src="assets/logo/logo.jpg?v=5" alt="SQUCO Logo" />
             <span class="brand-name">SQU<span>CO</span></span>
           </a>
           <p>
@@ -608,15 +828,12 @@
         </div>
 
         <div class="footer-col">
-          <h4>Collections</h4>
+          <h4>4 Core Collections</h4>
           <ul class="footer-links">
-            <li><a href="#products" onclick="renderProducts('daily')">SQUCO Daily</a></li>
-            <li><a href="#products" onclick="renderProducts('handwoven')">SQUCO Handwoven</a></li>
-            <li><a href="#products" onclick="renderProducts('kids')">SQUCO Kids</a></li>
-            <li><a href="#products" onclick="renderProducts('grownups')">SQUCO Grownups</a></li>
-            <li><a href="#products" onclick="renderProducts('occasion')">SQUCO Occasion</a></li>
-            <li><a href="#products" onclick="renderProducts('corporate')">SQUCO Corporate</a></li>
-            <li><a href="#products" onclick="renderProducts('couple')">First Night & Marriage</a></li>
+            <li><a href="#products" onclick="renderProducts('everyday')">🌿 Everyday Collection</a></li>
+            <li><a href="#products" onclick="renderProducts('festival')">🎉 Festival & Occasions</a></li>
+            <li><a href="#products" onclick="renderProducts('corporate')">💼 Corporate Gifting</a></li>
+            <li><a href="#products" onclick="renderProducts('kids')">🧸 Kids & Little Pockets</a></li>
           </ul>
         </div>
 
@@ -683,6 +900,6 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="js/app.js?v=20"></script>
+  <script src="js/app.js?v=85"></script>
 </body>
 </html>
