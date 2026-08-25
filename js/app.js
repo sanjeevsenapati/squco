@@ -89,28 +89,6 @@ const products = [
     theme: "theme-everyday"
   },
   {
-    id: "handwoven-hanky",
-    category: "everyday",
-    categoryLabel: "🧵 Everyday Handloom",
-    name: "Handwoven Artisan Handkerchief",
-    description: "Traditional handwoven cotton handkerchief for everyday use. Woven on heritage pit looms with a geometric star Ikat motif, natural dyed yarns, and breathable pure cotton weave.",
-    image: "assets/products/handwoven-hanky.jpg",
-    highlights: [
-      "100% Handloom Organic Cotton Weave",
-      "Heritage Geometric Star Ikat Motif",
-      "Ultra-soft breathable natural dyed yarn",
-      "Signature 2×2×2 inches Zigzag Pocket Fold"
-    ],
-    included: [
-      "1x SQUCO Handwoven Artisan Handkerchief",
-      "1x Reusable 2×2×2 inches Craft Box",
-      "1x Handloom Weaver Certificate of Origin"
-    ],
-    idealFor: "Everyday carry, cultural gatherings, summer heat, mindful lifestyle, and artisanal gifting",
-    tagline: "Handloom Artisan Weave",
-    theme: "theme-everyday"
-  },
-  {
     id: "grownups-hanky",
     category: "everyday",
     categoryLabel: "👔 Everyday Executive",
@@ -130,28 +108,6 @@ const products = [
     ],
     idealFor: "Business meetings, formal events, evening dining, and everyday executive carry",
     tagline: "1×1×3\" Slim Stick Pack",
-    theme: "theme-everyday"
-  },
-  {
-    id: "everyday-commuter",
-    category: "everyday",
-    categoryLabel: "☕ Morning Commuter",
-    name: "Morning Commuter Waffle-Weave Hanky",
-    description: "Engineered for daily hustle and summer commutes. Breathable micro-waffle organic cotton that wicks moisture instantly and dries 2x faster in your pocket.",
-    image: "assets/products/everyday-commuter.jpg",
-    highlights: [
-      "High-absorption micro-waffle organic weave",
-      "Quick-drying & odor-resistant natural cotton",
-      "Compact roll-and-tuck pocket design",
-      "Gentle cooling comfort on skin"
-    ],
-    included: [
-      "1x SQUCO Commuter Waffle Handkerchief",
-      "1x Breathable Commuter Pouch",
-      "1x Daily Care Card"
-    ],
-    idealFor: "Morning metro commutes, gym sessions, outdoor travel, and humid weather comfort",
-    tagline: "Commuter Quick-Dry",
     theme: "theme-everyday"
   },
   {
@@ -179,136 +135,25 @@ const products = [
 
   // --- FESTIVAL & OCCASION COLLECTION ---
   {
-    id: "festival-rakshabandhan",
-    category: "festival",
-    categoryLabel: "🌸 Raksha Bandhan Special",
-    name: "Raksha Bandhan Saffron & Gold Keepsake",
-    description: "The sacred bond of love and protection. Gifted alongside the sacred Rakhi thread — a pure organic cotton handkerchief carrying a sister and brother's lifelong promise of care in every pocket.",
-    image: "assets/products/festival-rakshabandhan.jpg",
-    highlights: [
-      "Sacred Saffron & Maroon Hand-Stitched Border",
-      "100% Breathable Organic Cotton with Gold Zari Accents",
-      "Special 'Bandhan of Care' Festive Keepsake Box",
-      "Includes handmade silk Rakhi thread & Roli Chawal pack"
-    ],
-    included: [
-      "1x SQUCO Raksha Bandhan Keepsake Handkerchief",
-      "1x Handcrafted Silk Rakhi Thread & Roli Chawal",
-      "1x Gold-Embossed Festival Presentation Box",
-      "1x Handwritten Sibling Wish Card"
-    ],
-    idealFor: "Raksha Bandhan gifting, Bhai Dooj, sibling celebrations, and lasting everyday pocket carry",
-    tagline: "Rakhi Special Edition",
-    theme: "theme-festival"
-  },
-  {
-    id: "festival-sabitri",
-    category: "festival",
-    categoryLabel: "🪔 Sabitri Brata Sacred",
-    name: "Sabitri Brata Crimson & Gold Temple Hanky",
-    description: "Sacred prayers and devotion for marital blessings and long life. Woven from auspicious vermilion crimson red cotton with gold temple brocade borders, traditionally kept during rituals.",
-    image: "assets/products/festival-sabitri.jpg",
-    highlights: [
-      "Auspicious Vermilion Crimson Red Weave",
-      "Traditional Golden Temple Border Brocade",
-      "Soft holy prayer weave for morning rituals & temples",
-      "Sacred blessing keepsake quality"
-    ],
-    included: [
-      "1x SQUCO Sabitri Brata Crimson Handkerchief",
-      "1x Brass-Etched Sacred Keepsake Box",
-      "1x Auspicious Kumkum & Chandan Blessing Pouch"
-    ],
-    idealFor: "Sabitri Brata, Karwa Chauth, Vat Savitri, temple offerings, and sacred married blessings",
-    tagline: "Sabitri Brata Sacred Edition",
-    theme: "theme-festival"
-  },
-  {
-    id: "festival-rathyatra",
-    category: "festival",
-    categoryLabel: "🎪 Rath Yatra Devotion",
-    name: "Rath Yatra Sacred Nandighosa Pit-Loom Hanky",
-    description: "Inspired by the holy Rath Yatra chariot colors and temple sanctity. Handwoven pit-loom cotton in vibrant sacred yellow and chariot-red with subtle temple wheel embroidery.",
-    image: "assets/products/festival-rathyatra.jpg",
-    highlights: [
-      "Sacred Nandighosa Yellow & Scarlet Red Chariot Palette",
-      "Handwoven pit-loom artisan cotton with wheel motif",
-      "Absorbent, breathable for spiritual pilgrimages and monsoon yatras",
-      "Cultural keepsake of Lord Jagannath's grand celebration"
-    ],
-    included: [
-      "1x SQUCO Rath Yatra Sacred Handkerchief",
-      "1x Handcrafted Miniature Chariot Wheel Token",
-      "1x Eco-friendly Palm Leaf Carrying Box"
-    ],
-    idealFor: "Rath Yatra pilgrimage, spiritual gatherings, cultural heritage lovers, and auspicious gifting",
-    tagline: "Rath Yatra Heritage Edition",
-    theme: "theme-festival"
-  },
-  {
     id: "festival-newyear",
     category: "festival",
-    categoryLabel: "✨ New Year Fresh Start",
-    name: "New Year Fresh Start (Pristine White & Gold)",
-    description: "Start the new calendar year with fresh intentions and clean mindful habits. Pristine snow-white Egyptian combed cotton with subtle silver & emerald monogramming.",
+    categoryLabel: "🎉 New Year Cotton Greetings",
+    name: "Happy New Year Cotton Greeting Edition",
+    description: "Send Cotton Greetings instead of paper cards or digital texts! Change a small habit, save the world — gift a pristine organic cotton handkerchief with elegant 'Happy New Year' gold cursive embroidery that lives in their pocket all year round instead of a trash bin.",
     image: "assets/products/festival-newyear.jpg",
     highlights: [
-      "Pristine Snow-White Combed Organic Cotton",
-      "Subtle Emerald & Gold Laurels Monogram",
-      "Symbol of clean beginnings, fresh mindset, and zero waste",
-      "Luxury gift packaging with New Year habit card"
+      "Golden Thread Cursive 'Happy New Year' Hand Embroidery",
+      "Send Cotton Greetings instead of paper cards or digital texts",
+      "Change a small habit, save the world from paper waste",
+      "Signature Deep Forest Green SQUCO Gold Foil Presentation Box"
     ],
     included: [
-      "1x SQUCO New Year Edition Handkerchief",
-      "1x 'Habit for the Year' Mindfulness Goal Guide",
-      "1x Deluxe White & Emerald Embossed Gift Box"
+      "1x SQUCO 'Happy New Year' Embroidered Cotton Greeting Handkerchief",
+      "1x Signature Deep Forest Green SQUCO Box",
+      "1x 'Cotton Greetings & Habit Revival' Parchment Card"
     ],
-    idealFor: "New Year gifts, corporate executive resolutions, clean beginnings, and holiday gifting",
-    tagline: "New Year Edition",
-    theme: "theme-festival"
-  },
-  {
-    id: "festival-friendship",
-    category: "festival",
-    categoryLabel: "🤝 Friendship Day Special",
-    name: "Friendship Day 'Always With You' Twin Set",
-    description: "A pair of twin complementary woven handkerchiefs for best friends. A gentle reminder that true friendship is always there in times of laughter, adventure, or wiped tears.",
-    image: "assets/products/festival-friendship.jpg",
-    highlights: [
-      "Twin Complementary Handkerchief Set (Blue & Honey Gold)",
-      "Soft breathable double-gauze natural organic cotton",
-      "Tied with natural jute twine and keepsake card",
-      "Symbol of unspoken everyday care and companionship"
-    ],
-    included: [
-      "2x SQUCO Twin Friendship Handkerchiefs",
-      "1x Rustic Jute Bound Gift Wrapping",
-      "1x 'Always in Your Pocket' Friendship Keepsake Card"
-    ],
-    idealFor: "Friendship Day, best friend birthdays, college farewells, travel companions, and close bonds",
-    tagline: "Friendship Twin Set",
-    theme: "theme-festival"
-  },
-  {
-    id: "festival-valentines",
-    category: "festival",
-    categoryLabel: "🌹 Valentine's Day Love",
-    name: "Valentine's Day Rose Embroidered Love Keepsake",
-    description: "Say goodbye to throwaway flowers that wilt in days. Gift a soft organic cotton handkerchief with a delicate hand-embroidered crimson rose and custom initials that lasts for years.",
-    image: "assets/products/festival-valentines.jpg",
-    highlights: [
-      "Delicate Hand-Embroidered Crimson Rose Emblem",
-      "Pure whisper-soft organic cotton in blush-white",
-      "Custom his & her initials option on request",
-      "Velvet-lined romantic keepsake presentation box"
-    ],
-    included: [
-      "1x SQUCO Valentine Rose Handkerchief",
-      "1x Royal Crimson Presentation Box",
-      "1x Wax-Sealed Romantic Parchment Love Note"
-    ],
-    idealFor: "Valentine's Day, wedding proposals, anniversaries, romantic dates, and timeless romantic gestures",
-    tagline: "Valentine's Edition",
+    idealFor: "New Year wishes, eco-friendly cotton greetings, replacing paper cards & WhatsApp forwards, and zero-waste gift traditions",
+    tagline: "Cotton Greetings Edition",
     theme: "theme-festival"
   },
   {
@@ -334,25 +179,25 @@ const products = [
     theme: "theme-festival"
   },
   {
-    id: "occasion-hanky",
+    id: "festival-valentines",
     category: "festival",
-    categoryLabel: "🎁 Wedding Return Gift",
-    name: "Moments Worth Remembering (Occasion Gift)",
-    description: "Some moments deserve something more personal than disposable tissues. Designed for festivals, family milestones, and personalized wedding return gifts with custom printed names.",
-    image: "assets/products/occasion-hanky.jpg",
+    categoryLabel: "🌹 Valentine's Day Love",
+    name: "Valentine's Day Rose Embroidered Love Keepsake",
+    description: "Say goodbye to throwaway flowers that wilt in days. Gift a soft organic cotton handkerchief with a delicate hand-embroidered crimson rose and custom initials that lasts for years.",
+    image: "assets/products/festival-valentines.jpg",
     highlights: [
-      "Silk-bordered celebration weave",
-      "Wedding return gift with custom name printing",
-      "Gold foil embossed presentation box",
-      "Timeless heirloom keepsake quality"
+      "Delicate Hand-Embroidered Crimson Rose Emblem",
+      "Pure whisper-soft organic cotton in blush-white",
+      "Custom his & her initials option on request",
+      "Velvet-lined romantic keepsake presentation box"
     ],
     included: [
-      "1x SQUCO Celebration Handkerchief",
-      "1x Gold Foil Embossed Gift Packaging",
-      "1x Personalized Name Printed Keepsake Card"
+      "1x SQUCO Valentine Rose Handkerchief",
+      "1x Royal Crimson Presentation Box",
+      "1x Wax-Sealed Romantic Parchment Love Note"
     ],
-    idealFor: "Wedding return gifts, festivals, milestone birthdays, family celebrations, and thoughtful gifts",
-    tagline: "Wedding Return Gift",
+    idealFor: "Valentine's Day, wedding proposals, anniversaries, romantic dates, and timeless romantic gestures",
+    tagline: "Valentine's Edition",
     theme: "theme-festival"
   },
 
@@ -423,72 +268,50 @@ const products = [
     tagline: "Leadership Black & Gold",
     theme: "theme-corporate"
   },
-  {
-    id: "corporate-delegate",
-    category: "corporate",
-    categoryLabel: "🤝 Delegate & Conference",
-    name: "Global Delegate Welcome Hanky Set",
-    description: "Welcome international summit delegates and VIP guests with a meaningful, culturally rooted gift. Compact 2×2×2\" cube pack that travels effortlessly in luggage.",
-    image: "assets/products/corporate-delegate.jpg",
-    highlights: [
-      "Lightweight travel-friendly 2×2×2 inches cube",
-      "Custom conference event logo branding",
-      "Soft breathable Indian heritage weave",
-      "Thoughtful alternative to throwaway conference swag"
-    ],
-    included: [
-      "1x SQUCO Delegate Handkerchief",
-      "1x Custom Branded Delegate Cube Pack",
-      "1x Welcome Message Card"
-    ],
-    idealFor: "International summits, annual conventions, investor meetings, and delegate welcome kits",
-    tagline: "Delegate Welcome Set",
-    theme: "theme-corporate"
-  },
 
   // --- KIDS & LITTLE POCKETS COLLECTION ---
+  {
+    id: "kids-bedtime-hanky",
+    category: "kids",
+    categoryLabel: "🌙 Kids Bedtime & Daily",
+    name: "Kids Bedtime Dreamer & Daily Comfort Cloth",
+    description: "Whisper-soft organic double-gauze cotton with soothing embroidery. Designed for school uniform pockets, naptime comfort, and daily hygiene habit building.",
+    image: "assets/products/kids-bedtime-hanky.jpg",
+    highlights: [
+      "Cloud-soft 100% organic double-gauze muslin",
+      "Gentle stars, moon & animal character embroidery",
+      "Signature Forest Green Kids Square Gift Box",
+      "Soothes children for school, play & peaceful bedtime"
+    ],
+    included: [
+      "3x SQUCO Kids Bedtime Comfort Handkerchiefs",
+      "1x Signature Forest Green SQUCO Kids Box",
+      "1x Sweet Dreams & Daily Habit Story Card"
+    ],
+    idealFor: "Toddler soothing, primary school uniform pockets, bedtime routine, nursery comfort, and daily hygiene",
+    tagline: "Bedtime & Daily Comfort",
+    theme: "theme-kids"
+  },
   {
     id: "kids-animal-hanky",
     category: "kids",
     categoryLabel: "🦁 Kids Animal Friends",
     name: "Kids Safari Friends (Animal Printed)",
-    description: "Ultra-soft pastel organic cotton handkerchiefs featuring cute baby animal embroidery (Lion, Panda, Elephant) with rounded safety corners and a playful 3×3×1\" pocket cube.",
+    description: "Ultra-soft pastel organic cotton handkerchiefs featuring cute baby animal embroidery (Lion, Panda, Elephant) with rounded safety corners.",
     image: "assets/products/kids-animal-hanky.jpg",
     highlights: [
       "Soft Baby Lion, Panda & Elephant Characters",
       "Rounded safety hem with gentle stitching",
       "Hypoallergenic 100% organic combed cotton",
-      "Includes colorful 3×3×1 inches Kids Pocket Cube"
+      "Includes Forest Green SQUCO Kids Gift Box"
     ],
     included: [
       "3x SQUCO Kids Animal Embroidered Handkerchiefs",
-      "1x Kids Adventure 3×3×1 inches Pocket Cube",
+      "1x Forest Green SQUCO Kids Box",
       "1x 'Hanky Hero' Reward Sticker Sheet"
     ],
     idealFor: "Play school, primary school uniform pockets, travel days, and teaching children everyday personal hygiene",
     tagline: "Animal Friends Edition",
-    theme: "theme-kids"
-  },
-  {
-    id: "kids-fruit-hanky",
-    category: "kids",
-    categoryLabel: "🍓 Kids Sweet Fruits",
-    name: "Kids Sweet Fruits (Fruit Printed)",
-    description: "Delightful pastel cotton handkerchiefs with smiling fruit prints (Strawberries, Watermelon slices, Sunny Lemons). Lightweight, super-absorbent, and cheerful for little hands.",
-    image: "assets/products/kids-fruit-hanky.jpg",
-    highlights: [
-      "Joyful smiling strawberry & watermelon prints",
-      "Breathable double-gauze ultra-soft cotton",
-      "Color-fast natural non-toxic vegetable dyes",
-      "Quick-dry weave for messy playtime moments"
-    ],
-    included: [
-      "4x SQUCO Kids Sweet Fruits Handkerchiefs",
-      "1x Pastel 3×3×1 inches Carrying Tin",
-      "1x Fun Habit Tracker Chart"
-    ],
-    idealFor: "Lunchboxes, school picnics, art class, everyday outdoor play, and toddler care",
-    tagline: "Sweet Fruits Edition",
     theme: "theme-kids"
   },
   {
@@ -501,60 +324,16 @@ const products = [
     highlights: [
       "Extra soft skin-friendly organic weave",
       "Dedicated write-on name label for school",
-      "Custom 3×3×1 inches flat pocket pack",
+      "Signature Forest Green SQUCO Box",
       "Durable machine-washable & color-fast cotton"
     ],
     included: [
       "3x SQUCO School Uniform Handkerchiefs",
-      "1x Kids Flat 3×3×1 inches Pocket Pack",
+      "1x Signature Forest Green SQUCO Box",
       "1x 'Carry Your Hanky' School Habit Badge"
     ],
     idealFor: "Primary school uniform pockets, sports day sweat, lunchbox spills, and daily school habits",
     tagline: "School Uniform Classic",
-    theme: "theme-kids"
-  },
-  {
-    id: "kids-artist-hanky",
-    category: "kids",
-    categoryLabel: "🎨 Kids Little Artist",
-    name: "Kids Little Artist (Messy Play & Colors)",
-    description: "Designed for young creators! Playful rainbow border stitching and ultra-absorbent double-layer cotton that cleans watercolor paints, clay messes, and glitter with a smile.",
-    image: "assets/products/kids-artist-hanky.jpg",
-    highlights: [
-      "Vibrant rainbow edge stitching",
-      "Double-layer absorbent organic cotton",
-      "Stain-release quick wash weave",
-      "Fun crayon-themed mini travel box"
-    ],
-    included: [
-      "2x SQUCO Little Artist Handkerchiefs",
-      "1x Color Palette Carrying Tin",
-      "1x Mini Creative Drawing Bookmark"
-    ],
-    idealFor: "Art class, clay crafting, preschool messy play, watercolor painting, and cheerful daily wipes",
-    tagline: "Little Artist Edition",
-    theme: "theme-kids"
-  },
-  {
-    id: "kids-bedtime-hanky",
-    category: "kids",
-    categoryLabel: "🌙 Kids Bedtime Dreamer",
-    name: "Kids Bedtime Dreamer (Organic Comfort Cloth)",
-    description: "Whisper-soft organic double-gauze cotton with tiny embroidered stars and moon. A soothing comfort handkerchief for toddlers to hold during bedtime stories and peaceful sleep.",
-    image: "assets/products/kids-bedtime-hanky.jpg",
-    highlights: [
-      "Cloud-soft organic double-gauze muslin",
-      "Gentle bedtime stars & moon pastel embroidery",
-      "Calming, natural unbleached cotton feel",
-      "Soothes toddlers for peaceful naps & bedtime"
-    ],
-    included: [
-      "2x SQUCO Bedtime Dreamer Comfort Handkerchiefs",
-      "1x Night-sky Pillow Gift Pouch",
-      "1x Sweet Dreams Bedtime Story Card"
-    ],
-    idealFor: "Toddler soothing, bedtime routine, nursery comfort, car ride naps, and newborn gentle touch",
-    tagline: "Bedtime Comfort Cloth",
     theme: "theme-kids"
   }
 ];
@@ -899,3 +678,107 @@ function initScrollAnimations() {
     observer.observe(el);
   });
 }
+
+// ==========================================================================
+// 7. RUNTIME JSON CONTENT LOADER (Easy Editing via data/site-content.json)
+// ==========================================================================
+let currentSiteContent = null;
+
+async function loadSiteContentJSON() {
+  try {
+    const response = await fetch("data/site-content.json?t=" + Date.now());
+    if (!response.ok) throw new Error("Failed to fetch data/site-content.json");
+    const data = await response.json();
+    currentSiteContent = data;
+    window.SITE_CONTENT = data;
+    applyContentToDOM(data);
+    console.log("🌱 [SQUCO] Site content loaded successfully from data/site-content.json");
+  } catch (err) {
+    console.warn("⚠️ [SQUCO] Note: Could not fetch data/site-content.json via HTTP (CORS or static mode). HTML defaults remain active.", err.message);
+  }
+}
+
+function applyContentToDOM(data) {
+  if (!data) return;
+
+  // 1. Site Metadata
+  if (data.siteMeta) {
+    if (data.siteMeta.title) document.title = data.siteMeta.title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && data.siteMeta.description) metaDesc.content = data.siteMeta.description;
+  }
+
+  // 2. Hero Section
+  if (data.hero) {
+    const heroBadge = document.querySelector(".hero-badge span:not(.pulse-dot)");
+    if (heroBadge && data.hero.badgeText) heroBadge.textContent = data.hero.badgeText;
+
+    const heroTitle = document.querySelector(".hero-title");
+    if (heroTitle && data.hero.headline) heroTitle.innerHTML = data.hero.headline;
+
+    const heroTagline = document.querySelector(".hero-tagline-lead");
+    if (heroTagline && data.hero.subheadline) heroTagline.textContent = data.hero.subheadline;
+
+    const heroSubtitle = document.querySelector(".hero-subtitle");
+    if (heroSubtitle && data.hero.leadParagraph) heroSubtitle.textContent = data.hero.leadParagraph;
+
+    const heroQuote = document.querySelector(".floating-info span");
+    if (heroQuote && data.hero.glassQuote) heroQuote.textContent = data.hero.glassQuote;
+
+    const ctaPrimary = document.querySelector(".hero-cta-group .btn-primary");
+    if (ctaPrimary && data.hero.ctaPrimary) ctaPrimary.textContent = data.hero.ctaPrimary;
+
+    const ctaSecondary = document.querySelector(".hero-cta-group .btn-secondary");
+    if (ctaSecondary && data.hero.ctaSecondary) ctaSecondary.textContent = data.hero.ctaSecondary;
+  }
+
+  // 3. Principles Section
+  if (data.principles) {
+    const pTag = document.querySelector("#squco-principles .section-tag");
+    if (pTag && data.principles.sectionTag) pTag.textContent = data.principles.sectionTag;
+
+    const pTitle = document.querySelector("#squco-principles .section-title");
+    if (pTitle && data.principles.title) pTitle.innerHTML = data.principles.title;
+
+    const pSub = document.querySelector("#squco-principles .section-subtitle");
+    if (pSub && data.principles.subtitle) pSub.textContent = data.principles.subtitle;
+
+    const pConv = document.querySelector("#squco-principles .story-lead");
+    if (pConv && data.principles.convictionText) pConv.textContent = data.principles.convictionText;
+
+    const pQuoteHead = document.querySelector("#squco-principles .principle-callout-box h3");
+    if (pQuoteHead && data.principles.quoteHeadline) pQuoteHead.textContent = data.principles.quoteHeadline;
+
+    const pQuoteSub = document.querySelector("#squco-principles .principle-callout-box p");
+    if (pQuoteSub && data.principles.quoteSubtext) pQuoteSub.textContent = data.principles.quoteSubtext;
+  }
+
+  // 4. Collections Section Header
+  if (data.collections) {
+    const cTag = document.querySelector("#products .section-tag");
+    if (cTag && data.collections.sectionTag) cTag.textContent = data.collections.sectionTag;
+
+    const cTitle = document.querySelector("#products .section-title");
+    if (cTitle && data.collections.title) cTitle.textContent = data.collections.title;
+
+    const cSub = document.querySelector("#products .section-subtitle");
+    if (cSub && data.collections.subtitle) cSub.textContent = data.collections.subtitle;
+  }
+
+  // 5. Footer Section
+  if (data.footer) {
+    const fTagline = document.querySelector(".footer-brand p");
+    if (fTagline && data.footer.tagline) fTagline.textContent = data.footer.tagline;
+
+    const fCopy = document.querySelector(".footer-bottom p");
+    if (fCopy && data.footer.copyright) fCopy.textContent = data.footer.copyright;
+  }
+}
+
+// Global hook for manual content refresh
+window.reloadSiteContent = loadSiteContentJSON;
+
+// Run content loader on DOM load
+document.addEventListener("DOMContentLoaded", () => {
+  loadSiteContentJSON();
+});

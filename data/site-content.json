@@ -1,0 +1,159 @@
+{
+  "siteMeta": {
+    "title": "SQUCO — Bring Back the Hanky. Mindful Zero-Waste Living",
+    "description": "SQUCO brings back the timeless grace of carrying a clean handkerchief into modern everyday life. 100% organic cotton, heritage craftsmanship, zero-waste living.",
+    "whatsappNumber": "+919019921521",
+    "whatsappRaw": "9019921521"
+  },
+
+  "header": {
+    "brandName": "SQUCO",
+    "homeNavText": "Home",
+    "logoAlt": "SQUCO Heritage Logo",
+    "navLinks": [
+      { "id": "home", "label": "Home", "href": "#home" },
+      { "id": "story", "label": "The SQUCO Story", "href": "#story" },
+      { "id": "squco-principles", "label": "SQUCO Principles", "href": "#squco-principles" },
+      { "id": "products", "label": "Collections", "href": "#products", "isDropdown": true },
+      { "id": "who-for", "label": "Who Is It For?", "href": "#who-for" },
+      { "id": "how-it-works", "label": "How It Works", "href": "#how-it-works" },
+      { "id": "faq", "label": "FAQ", "href": "#faq" }
+    ],
+    "headerCtaText": "Order"
+  },
+
+  "hero": {
+    "badgeText": "🌿 The Handkerchief Revival",
+    "headline": "Bring Back<br />the Hanky.",
+    "subheadline": "A small square of cotton. A lifetime of quiet care and memories.",
+    "leadParagraph": "Remember when someone you loved reached into their pocket, and handed you a clean, freshly pressed handkerchief? It wasn’t just cloth — it was comfort, manners, and quiet care you could feel. SQUCO brings that timeless grace back into modern everyday life.",
+    "pillars": [
+      { "title": "Pure Comfort", "sub": "100% Organic Cotton" },
+      { "title": "Everyday Manners", "sub": "Poise & Preparedness" },
+      { "title": "Mindful Living", "sub": "End Disposable Waste" }
+    ],
+    "ctaPrimary": "Discover the Collections →",
+    "ctaSecondary": "Read Our Story",
+    "mainImage": "assets/hero/hero-hanky-packet.jpg",
+    "mainImageAlt": "SQUCO Signature Forest Green Handkerchief Box and Traditional Woven Border Hanky",
+    "glassQuote": "\"You don’t need it every minute. You need it when it matters most.\""
+  },
+
+  "story": {
+    "sectionTag": "01 — The Nostalgic Memory",
+    "title": "Remember When <br /><span class=\"gradient-text\">Everyone Carried One?</span>",
+    "subtitle": "Carrying a handkerchief was once a normal everyday habit. It was practical, personal, hygienic, and reflected care for oneself and others.",
+    "paragraphs": [
+      "A handkerchief was in every pocket, purse, and school bag. It wiped away tears, dried hands after washing, dabbed a child's forehead in the sun, and stood ready for unexpected moments of warmth.",
+      "Somewhere along the way, we replaced this thoughtful, permanent companion with single-use paper tissues. We sacrificed dignity, craftsmanship, and sustainability for temporary convenience.",
+      "SQUCO exists to revive this lost daily habit — making carrying a soft, clean handkerchief second nature for adults, executives, couples, and little ones alike."
+    ]
+  },
+
+  "principles": {
+    "sectionTag": "🌿 SQUCO Principles & Values",
+    "title": "Mindful Craft.<br />Timeless Principles.",
+    "subtitle": "Small Habits. Everyday Dignity.",
+    "convictionText": "SQUCO is built on a simple conviction: a clean, soft handkerchief is a quiet companion of poise, personal hygiene, and human warmth. We craft every handkerchief from 100% organic cotton, handloom weaves, and signature gold-embossed forest green presentation boxes so that carrying a handkerchief feels natural, modern, and deeply rewarding.",
+    "quoteHeadline": "\"Old Habit. New Attitude.\"",
+    "quoteSubtext": "Zero-waste mindfulness. Everyday care.",
+    "pillarsTitle": "Pillars of the SQUCO Everyday Practice:",
+    "pillars": [
+      { "icon": "🌱", "title": "Reusable organic cotton over waste." },
+      { "icon": "🤝", "title": "Poise & manners in every interaction." },
+      { "icon": "👶", "title": "Teaching children self-reliance early." },
+      { "icon": "✨", "title": "Preparedness for life's quiet moments." }
+    ]
+  },
+
+  "collections": {
+    "sectionTag": "Signature SQUCO Collections & Presentation Boxes",
+    "title": "Crafted For Every Moment & Generation",
+    "subtitle": "Curated editions packaged in deep forest green paper-texture boxes with gold foil embossing — inspired by timeless heritage craftsmanship.",
+    "categories": [
+      { "id": "all", "label": "All Collections" },
+      { "id": "everyday", "label": "🌿 Everyday Carry" },
+      { "id": "festival", "label": "🎉 Festival & Occasion" },
+      { "id": "corporate", "label": "💼 Corporate ESG" },
+      { "id": "kids", "label": "🧸 Kids & Little Pockets" }
+    ]
+  },
+
+  "whoFor": {
+    "sectionTag": "03 — Purposeful Carrying",
+    "title": "Who Is SQUCO For?",
+    "subtitle": "Designed for everyone who values poise, preparedness, hygiene, and thoughtful gifting.",
+    "personas": [
+      {
+        "title": "The Everyday Modernist",
+        "description": "For adults & professionals who appreciate clean hands, soft touch, and ending disposable paper tissue waste."
+      },
+      {
+        "title": "Little Pockets & Children",
+        "description": "For school children & toddlers to learn personal hygiene habits, self-reliance, and pocket preparedness early."
+      },
+      {
+        "title": "Couples & Celebrations",
+        "description": "For wedding return gifts, anniversaries, and sacred couples' keepsakes that endure beyond wilted flowers."
+      },
+      {
+        "title": "ESG Corporate Leaders",
+        "description": "For forward-thinking companies offering employees and clients meaningful zero-waste sustainability gifts."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "sectionTag": "04 — Simple Daily Routine",
+    "title": "How To Practice The SQUCO Habit",
+    "subtitle": "Three simple steps to re-introduce quiet care into your everyday life.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Pocket Fresh Every Morning",
+        "description": "Select a clean, freshly pressed SQUCO handkerchief from your signature presentation box before stepping out."
+      },
+      {
+        "step": "02",
+        "title": "Ready When It Matters",
+        "description": "Reach for your cotton handkerchief during meals, commutes, work desks, or gentle moments of comfort."
+      },
+      {
+        "step": "03",
+        "title": "Wash & Reuse Indefinitely",
+        "description": "Toss it in your regular laundry wash cycle. SQUCO organic cotton grows softer and more absorbent with every wash."
+      }
+    ]
+  },
+
+  "faq": {
+    "sectionTag": "05 — Questions & Answers",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about SQUCO handkerchiefs, organic cotton care, and direct WhatsApp ordering.",
+    "items": [
+      {
+        "q": "Why carry a handkerchief when we have paper tissues?",
+        "a": "Paper tissues are single-use, bleach-processed, and generate massive daily waste that ends up in landfills. A SQUCO organic cotton handkerchief is soft on skin, completely reusable, washable hundreds of times, and adds timeless poise and personal care to your day."
+      },
+      {
+        "q": "How do I care for and wash my SQUCO handkerchiefs?",
+        "a": "Machine wash or hand wash with gentle detergent. Warm ironing restores crisp edges. Our 100% organic cotton and handloom weaves become softer and more absorbent with each wash cycle."
+      },
+      {
+        "q": "How do I order on WhatsApp?",
+        "a": "Simply click any 'Order on WhatsApp' button on the website. A pre-filled order query will open directly in your WhatsApp app with your chosen product collection, ready for direct assistance and delivery."
+      },
+      {
+        "q": "Can I customize handkerchief sets for corporate gifting or weddings?",
+        "a": "Yes! We specialize in custom embroidered initials, corporate logo branding, wedding return gift boxes, and bespoke festive packaging. Reach out to us directly on WhatsApp at 9019921521."
+      }
+    ]
+  },
+
+  "footer": {
+    "brandName": "SQUCO",
+    "tagline": "Bring Back the Hanky. Mindful Zero-Waste Living.",
+    "copyright": "© 2026 SQUCO Handkerchief Revival Movement. All rights reserved.",
+    "directContact": "Direct Assistance: +91 9019921521"
+  }
+}
